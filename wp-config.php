@@ -18,16 +18,15 @@
  * @package WordPress
  */
 
-$db = parse_url(getenv('DATABASE_URL') ? getenv('DATABASE_URL') : getenv('HEROKU_POSTGRESQL_MAUVE_URL'));
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', trim($db["path"],"/"));
+define('DB_NAME', "art");
 /** MySQL database username */
-define('DB_USER', $db["user"]);
+define('DB_USER', "admin3Zdwy6L");
 /** MySQL database password */
-define('DB_PASSWORD', $db["pass"]);
+define('DB_PASSWORD', "BTrrIGUd7E2N");
 /** MySQL hostname */
-define('DB_HOST', $db["host"]);
+define('DB_HOST', "localhost");
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
